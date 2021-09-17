@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: github-actions-challenge-01
 on: [push]
 jobs:
   check-bats-version:
@@ -9,5 +9,5 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g bats
+      - run: bats -v
       - run: node ./../../app.js
-
